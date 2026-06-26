@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 import sqlite3
 
-app = Flask(**name**)
+app = Flask(__name__)
 
 def db():
 conn = sqlite3.connect("store.db")
